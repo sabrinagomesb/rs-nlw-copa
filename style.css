@@ -21,20 +21,29 @@
  body.green {
   --card-title-border-color: #047C3F;   
   --card-color-primary: #047C3F;
-  --card-bg-color: #1a1f1b;
+  --card-bg-color: #121314;
   --bg: url(./assets/bg-green.svg);
 } 
+
+main {
+  padding-bottom: 40px;
+}
+
+main .select {
+  display: flex;
+  justify-content: center;
+}
 
 ul {
   list-style: none;
 }
 
 body {
-  background-color: #121214;
+  background-color: #121314;
   background-image: var(--bg);
-  background-position-x: top center;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   padding: 0 20px;
 }
 
@@ -55,14 +64,17 @@ header{
 
 h3 {
   padding: 20px 0;
-  color: var(--card-color-primary);
+  color: #E1E1E6;
+  font-size: 20px;
+  text-transform: uppercase;
+  
 }
 
 .cards {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .card {
@@ -104,7 +116,7 @@ h3 {
 
 .card ul li {
   display: flex;
-  alig-items: center;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -149,8 +161,29 @@ h3 {
 
 @media (min-width: 1100px) {
   .cards {
-    max-width: 1100px;
+    max-width: 1464px;
     flex-direction: row;
     flex-wrap: wrap;
   }
+}
+
+.groups img{
+  height: 50px;
+  width: 50px;
+}
+
+select {
+  width: 315px;
+  color: #F7DD43;
+  padding: 8px 20px;
+  border: 1px solid #323238;
+  border-radius: 6px;
+  background: transparent;
+  align-self: center;
+  align-items: center;
+  font-size: 16px;
+}
+
+option {
+  background: var(--card-color-primary);
 }
