@@ -1,3 +1,23 @@
+function createTitleGroup(name) {
+  return `
+    <h3>GRUPO ${name}</h3>
+    <div>
+      <a href="#logo"> 
+        <img src="./assets/icon-goback.svg" alt="Volte ao inicio">
+      </a>
+    </div>
+  `
+}
+
+document.querySelector("#cardA-title").innerHTML = createTitleGroup("A")
+document.querySelector("#cardB-title").innerHTML = createTitleGroup("B")
+document.querySelector("#cardC-title").innerHTML = createTitleGroup("C")
+document.querySelector("#cardD-title").innerHTML = createTitleGroup("D")
+document.querySelector("#cardE-title").innerHTML = createTitleGroup("E")
+document.querySelector("#cardF-title").innerHTML = createTitleGroup("F")
+document.querySelector("#cardG-title").innerHTML = createTitleGroup("G")
+document.querySelector("#cardH-title").innerHTML = createTitleGroup("H")
+
 function createdGame(player1, hour, player2) {
   return `
     <li>
@@ -45,7 +65,7 @@ function CreateGroup({
   hourB1,
   hourB2,
   hourC1,
-  hourC2
+  hourC2,
 }) {
   document.querySelector(`#card${name}`).innerHTML =
     createCard(
@@ -76,29 +96,25 @@ const groupAData = {
   player4: "netherlands",
 }
 
- document.querySelector("#cardA").innerHTML =
-   createCard(
-     "20/11",
-     "domingo",
-     createdGame("qatar", "13:00", "ecuador")
-   ) +
-   createCard(
-     "21/11",
-     "segunda",
-     createdGame("senegal", "13:00", "netherlands")
-   ) +
-   createCard(
-     "25/11",
-     "sexta",
-     createdGame("qatar", "10:00", "senegal") +
-       createdGame("netherlands", "13:00", "ecuador")
-   ) +
-   createCard(
-     "29/11",
-     "terça",
-     createdGame("netherlands", "12:00", "qatar") +
-       createdGame("ecuador", "12:00", "senegal")
-   )
+document.querySelector("#cardA").innerHTML =
+  createCard("20/11", "domingo", createdGame("qatar", "13:00", "ecuador")) +
+  createCard(
+    "21/11",
+    "segunda",
+    createdGame("senegal", "13:00", "netherlands")
+  ) +
+  createCard(
+    "25/11",
+    "sexta",
+    createdGame("qatar", "10:00", "senegal") +
+      createdGame("netherlands", "13:00", "ecuador")
+  ) +
+  createCard(
+    "29/11",
+    "terça",
+    createdGame("netherlands", "12:00", "qatar") +
+      createdGame("ecuador", "12:00", "senegal")
+  )
 
 const groupBData = {
   name: "B",

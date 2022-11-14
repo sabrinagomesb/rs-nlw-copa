@@ -58,7 +58,7 @@ body * {
 }
 
 header{
-  margin-bottom: 63px;
+  margin-bottom: 35px;
   text-align: center;
 }
 
@@ -186,4 +186,21 @@ select {
 
 option {
   background: var(--card-color-primary);
+}
+
+.title-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.title-group img {
+  width: 25px;
+  height: 25px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+
+.title-group img:hover {
+  background:#F7DD43;
 }
