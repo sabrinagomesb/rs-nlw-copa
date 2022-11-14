@@ -21,7 +21,7 @@
  body.green {
   --card-title-border-color: #047C3F;   
   --card-color-primary: #047C3F;
-  --card-bg-color: #121314;
+  --card-bg-color: #191a1c;
   --bg: url(./assets/bg-green.svg);
 } 
 
