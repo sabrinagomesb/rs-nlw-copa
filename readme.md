@@ -20,7 +20,10 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 O Calendário da Copa é um projeto que mostra os jogos da Copa de 2022 e ensina a aplicar os conhecimentos básicos da web.
 
 <p align="center">
-  <img alt="calendario da copa" src=".github/preview.jpg" width="90%">
+  <img alt="calendario da copa" src=".github/new_preview.jpg" width="70%">
+  <img alt="calendario da copa" src=".github/select.jpg" width="70%">
+  <img alt="calendario da copa" src=".github/goback.jpg" width="50%">
+  <img alt="calendario da copa" src=".github/tela_mobile.jpg" width="20%">
 </p>
 
 ## 🔖 Layout
