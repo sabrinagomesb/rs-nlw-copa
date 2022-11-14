@@ -44,7 +44,6 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 0 20px;
 }
 
 body * {
@@ -54,6 +53,7 @@ body * {
 #app {
   width: fit-content;
   margin: auto;
+  padding: 0 20px;
   padding-top: 52px;
 }
 
@@ -203,4 +203,12 @@ option {
 
 .title-group img:hover {
   background:#F7DD43;
+}
+
+footer {
+  background: #F7DD43;
+  width: 100%;
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
 }
